@@ -1,4 +1,4 @@
-# BJTUSE-wiki
+# bjtuse-wiki
 
 ## 依赖
 

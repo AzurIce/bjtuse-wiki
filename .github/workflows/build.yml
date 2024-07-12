@@ -41,7 +41,7 @@ jobs:
           path: ./site
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
     needs: build
     environment:
       name: github-pages
