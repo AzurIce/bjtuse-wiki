@@ -41,6 +41,7 @@ jobs:
           path: ./site
   deploy:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' }}
     needs: build
     environment:
       name: github-pages
