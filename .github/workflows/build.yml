@@ -1,0 +1,52 @@
+name: mkdocs github pages
+
+on:
+  push:
+    branches: ["main"]  # Set a branch that will trigger a deployment
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+      
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2
+      - run: poetry install
+      
+      - name: 🔨 Build Site
+        run: poetry run mkdocs build
+
+      - name: ⏫ Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' }}
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: ☁️ Deploy GitHub Pages site
+        id: deployment
+        uses: actions/deploy-pages@v4
