@@ -6,5 +6,12 @@
 
 ```
 poetry install
-poetry mkdocs serve
+poetry run mkdocs serve
+```
+
+或者如果有 [casey/just](https://github.com/casey/just)：
+
+```
+just install
+just serve
 ```
