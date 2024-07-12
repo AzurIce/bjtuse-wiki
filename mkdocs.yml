@@ -1,9 +1,9 @@
 # Project Information
-site_name: BJTUSE-wiki
+site_name: bjtuse-wiki
 
 # Repository
-repo_name: 'BJTUSE-wiki/BJTUSE-wiki'
-repo_url: 'https://github.com/BJTUSE-wiki/BJTUSE-wiki'
+repo_name: 'AzurIce/bjtuse-wiki'
+repo_url: 'https://github.com/AzurIce/bjtuse-wiki'
 edit_uri: edit/main/docs/
 
 # Theme
