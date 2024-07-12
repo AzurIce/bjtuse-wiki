@@ -1,0 +1,85 @@
+# Project Information
+site_name: BJTUSE-wiki
+
+# Repository
+repo_name: 'BJTUSE-wiki/BJTUSE-wiki'
+repo_url: 'https://github.com/BJTUSE-wiki/BJTUSE-wiki'
+edit_uri: edit/main/docs/
+
+# Theme
+theme:
+  language: zh
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.share
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - toc.follow
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra_javascript:
+  - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
+  - js/diagram.js
+
+extra_css:
+  - css/diagram.css
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  # Images https://squidfunk.github.io/mkdocs-material/reference/images/
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - pymdownx.critic # critic markup
+  - pymdownx.caret # ^^insert^^ ^superscript^
+  - pymdownx.mark  # ==mark==
+  - pymdownx.tilde # ~~delete~~ ~subscript~
+  - pymdownx.keys  # ++key++
+  - admonition
+  - pymdownx.details # collapsible admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+      linenums: true
+      linenums_style: table
+      anchor_linenums: true
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - glightbox # image zoom (mkdocs-glightbox)
