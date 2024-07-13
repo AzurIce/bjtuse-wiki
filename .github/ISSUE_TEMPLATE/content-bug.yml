@@ -1,5 +1,5 @@
 name: 页面内容错误汇报
-about: 指出页面内容的错误
+description: 指出页面内容的错误
 title: '[内容有误] '
 labels: ["Content Bug / 内容有误", "Help Wanted / 需要援助"]
 
@@ -24,6 +24,6 @@ body:
 - type: textarea
   id: bug
   attributes:
-    labels: 页面存在的问题
+    label: 页面存在的问题
   validations:
     required: true

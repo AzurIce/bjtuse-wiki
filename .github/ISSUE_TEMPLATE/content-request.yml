@@ -1,5 +1,5 @@
 name: 新页面请求
-about: 请求增加新页面
+description: 请求增加新页面
 title: 'Add '
 labels: ["Content Request / 内容请求", "Help Wanted / 需要援助"]
 
@@ -18,7 +18,7 @@ body:
 - type: textarea
   id: page
   attributes:
-    labels: 页面大致内容
+    label: 页面大致内容
   validations:
     required: true
 - type: textarea
