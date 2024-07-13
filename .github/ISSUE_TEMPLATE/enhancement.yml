@@ -12,19 +12,19 @@ body:
       ---
 
       欢迎参与到 bjtuse-wiki 的贡献！请填写以下内容：
-- type: input
+- type: textarea
   id: problem
   attributes:
     label: 需要解决的问题
   validations:
     required: true
-- type: input
+- type: textarea
   id: effect
   attributes:
     label: 预期的效果
   validations:
     required: true
-- type: input
+- type: textarea
   id: solution
   attributes:
     label: 可能的解决方案
