@@ -1,0 +1,32 @@
+name: 功能申请
+about: 申请为 wiki 增加新功能
+title: '[内容有误] '
+labels: ["Feature Request / 功能请求", "Help Wanted / 需要援助"]
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      对新功能的添加往往意味着存在一些亟待结局/改进的现有问题。
+
+      ---
+
+      欢迎参与到 bjtuse-wiki 的贡献！请填写以下内容：
+- type: input
+  id: problem
+  attributes:
+    label: 需要解决的问题
+  validations:
+    required: true
+- type: input
+  id: effect
+  attributes:
+    label: 预期的效果
+  validations:
+    required: true
+- type: input
+  id: solution
+  attributes:
+    label: 可能的解决方案
+  validations:
+    required: false
