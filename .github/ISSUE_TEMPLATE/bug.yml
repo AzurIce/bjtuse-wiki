@@ -1,5 +1,5 @@
 name: 页面无关 Bug 汇报
-about: 指出出现的问题
+description: 指出出现的问题
 title: '[BUG] '
 labels: ["Other Bug / 页面无关的 Bug"]
 
@@ -17,13 +17,13 @@ body:
 - type: textarea
   id: bug
   attributes:
-    labels: 页面存在的问题
+    label: 页面存在的问题
     description: 简易添加截图以更加清晰地描述你的问题
   validations:
     required: true
 - type: textarea
   id: reproduce
   attributes:
-    labels: 问题复现方法
+    label: 问题复现方法
   validations:
     required: false
