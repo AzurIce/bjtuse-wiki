@@ -1,0 +1,32 @@
+name: 发起 RFC
+description: 有关项目结构、方针等大方向或某些争议的解决方式的提案
+title: "[RFC] "
+labels: ["RFC / 提案", "Discussion / 需要讨论"]
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      注意：RFC 通常用于较大的结构性问题，如 wiki 技术栈更改、wiki 发展方向或原则方针等。
+      
+      ---
+      
+      欢迎参与到 bjtuse-wiki 的贡献！请填写以下内容：
+- type: textarea
+  id: motivation
+  attributes:
+    label: 提案的动机
+  validations:
+    required: true
+- type: textarea
+  id: content
+  attributes:
+    label: 提案的详细内容
+  validations:
+    required: true
+- type: textarea
+  id: reference
+  attributes:
+    label: 相关链接与参考资料
+  validations:
+    required: false

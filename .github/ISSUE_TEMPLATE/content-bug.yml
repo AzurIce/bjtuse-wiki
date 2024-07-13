@@ -1,0 +1,29 @@
+name: 页面内容错误汇报
+about: 指出页面内容的错误
+title: '[内容有误] '
+labels: ["Content Bug / 内容有误", "Help Wanted / 需要援助"]
+
+body:
+- type: markdown
+  attributes:
+    value: 欢迎参与到 bjtuse-wiki 的贡献！请填写以下内容：
+- type: checkboxes
+  id: confirm
+  attributes:
+    label: 请选择：
+    options:
+    - label: 我正在着手修复这个问题
+      required: false
+- type: input
+  id: page
+  attributes:
+    label: 存在问题的页面链接
+    description: 建议提供到仓库内具体 Commit 的链接
+  validations:
+    required: true
+- type: textarea
+  id: bug
+  attributes:
+    labels: 页面存在的问题
+  validations:
+    required: true
