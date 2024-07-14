@@ -58,12 +58,18 @@ theme:
         name: Switch to light mode
 
 extra_javascript:
+  # mermaid
   - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
   - js/diagram.js
+  # katex
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - js/katex.js
 
 extra_css:
-  - css/diagram.css
   - css/git-commiters.css
+  - css/diagram.css # mermaid
+  - https://unpkg.com/katex@0/dist/katex.min.css # katex
 
 markdown_extensions:
   - toc:
@@ -94,6 +100,8 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.blocks.tab:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
   # Lists
   - def_list
   - pymdownx.tasklist:
