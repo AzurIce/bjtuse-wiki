@@ -5,3 +5,8 @@
     --md-text-font: "LXGW Bright";
     --md-code-font: "JetBrainsMono Nerd Font Mono";
 }
+
+/* 连字渲染效果不是很好 */
+/* .md-typeset code {
+    font-variant-ligatures: contextual;
+} */
