@@ -104,6 +104,14 @@ end
 </pre>
 
 ```
+test ligatures
+
+=> != === ?=
+/= &=
+#{}
+```
+
+```
 def this_is
     puts "some #{fenced} code"
 end

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-Thin.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-ThinItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-ExtraLight.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-ExtraLightItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-Light.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-LightItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-Regular.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-Italic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-Medium.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-MediumItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-SemiBold.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-SemiBoldItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-Bold.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-BoldItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-ExtraBold.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrainsMonoNerdFontMono Nerd Font Mono';
+    src: local('JetBrainsMonoNerdFontMono Nerd Font Mono'),
+    url('./JetBrainsMonoNerdFontMono/JetBrainsMonoNerdFontMono-ExtraBoldItalic.ttf') format('ttf');
+    font-display: swap;
+    font-weight: 800;
+    font-style: italic;
+}
