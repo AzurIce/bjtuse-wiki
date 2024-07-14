@@ -28,7 +28,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.share
-    - content.action.edit
+    - content.action.edit # 页面右上角的编辑按钮，跳转 GitHub
     - content.action.view
     - content.code.copy
     - toc.follow
@@ -90,3 +90,12 @@ markdown_extensions:
 plugins:
   - search
   - glightbox # image zoom (mkdocs-glightbox)
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-dates
+  - git-revision-date-localized: # (mkdocs-git-revision-date-localized-plugin)
+      type: iso_datetime
+      enable_creation_date: true
+      fallback_to_build_date: true
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-contributors
+  - git-committers: # (mkdocs-git-committers-plugin-2)
+      repository: AzurIce/bjtuse-wiki
+      branch: main
