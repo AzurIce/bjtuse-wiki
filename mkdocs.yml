@@ -19,7 +19,7 @@ nav:
   - 知识/技能:
     - 前言: knowledge/_index.md
     - 基础知识/常识:
-      - 进制转换: knowledge/basic/number-system.md
+      - 进制转换: knowledge/basic/base.md
       - 比特、字节: knowledge/basic/bit-byte.md
       - 文件、目录、路径: knowledge/basic/files-and-path.md
       - 命令行、终端: knowledge/basic/command-line.md
