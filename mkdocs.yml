@@ -6,12 +6,22 @@ repo_name: 'AzurIce/bjtuse-wiki'
 repo_url: 'https://github.com/AzurIce/bjtuse-wiki'
 edit_uri: edit/main/docs/
 
+draft_docs: |
+  drafts/
+  _*.md
+
 nav:
   - 简介: # intro
     - 简介: index.md
     # - 如何参与: intro/how-to-contribute.md
     # - 贡献规范: intro/contribute-format.md
     - F.A.Q: intro/faq.md
+  # - 知识/技能:
+  #   - 概述: knowledge/index.md
+  # - 课程:
+  #   - 概述: course/index.md
+  #   - 大一上:
+  #     - C 语言程序设计: course/grade-1-semester-1/c-programming/index.md
 
 # Theme
 theme:
@@ -19,19 +29,20 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - navigation.instant
-    - navigation.tabs
+    - navigation.instant  # Use XHR instead of fully reloading the page
+    - navigation.instant.progress
+    - navigation.tabs     # Enable navigation tabs（顶部导航栏）
     - navigation.tabs.sticky
     - navigation.path
-    - navigation.sections
-    - navigation.tracking
-    - navigation.top
-    - search.suggest
-    - search.share
-    - content.action.edit
+    - navigation.sections # Enable navigation sections（左侧 Section 大纲）
+    - navigation.tracking # anchor 跟随
+    - navigation.top      # Back-to-Top button（返回顶部按钮）
+    - content.action.edit # 页面右上角的编辑按钮，跳转 GitHub
     - content.action.view
     - content.code.copy
-    - toc.follow
+    - toc.follow          # toc 跟随
+    - search.suggest
+    - search.share
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -47,11 +58,14 @@ theme:
         name: Switch to light mode
 
 extra_javascript:
-  - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
-  - js/diagram.js
+  # katex
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - js/katex.js
 
 extra_css:
-  - css/diagram.css
+  - css/git-commiters.css
+  - https://unpkg.com/katex@0/dist/katex.min.css # katex
 
 markdown_extensions:
   - toc:
@@ -69,11 +83,6 @@ markdown_extensions:
   - pymdownx.keys  # ++key++
   - admonition
   - pymdownx.details # collapsible admonition
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: diagram
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       use_pygments: true
       auto_title: true
@@ -82,11 +91,28 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.blocks.tab:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
   # Lists
   - def_list
-  - pymdownx.tasklist:
+  - pymdownx.superfences: # mermaid support
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tasklist: # math support
       custom_checkbox: true
 
 plugins:
   - search
   - glightbox # image zoom (mkdocs-glightbox)
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-dates
+  - git-revision-date-localized: # (mkdocs-git-revision-date-localized-plugin)
+      type: iso_datetime
+      enable_creation_date: true
+      fallback_to_build_date: true
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-contributors
+  - git-committers: # (mkdocs-git-committers-plugin-2)
+      repository: AzurIce/bjtuse-wiki
+      branch: main
+  - mermaid2

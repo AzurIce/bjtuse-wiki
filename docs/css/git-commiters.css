@@ -1,0 +1,5 @@
+.md-typeset a.md-author img {
+    border-radius: 100%;
+    filter: opacity(75%);
+    transition: filter 125ms
+}
