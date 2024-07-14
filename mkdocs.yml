@@ -17,7 +17,7 @@ nav:
     # - 贡献规范: intro/contribute-format.md
     - F.A.Q: intro/faq.md
   - 知识/技能:
-    - 概述: knowledge/_index.md
+    - 前言: knowledge/_index.md
     - 基础知识/常识:
       - 进制转换: knowledge/basic/number-system.md
       - 比特、字节: knowledge/basic/bit-byte.md
@@ -69,11 +69,11 @@ extra_javascript:
   # katex
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-  - js/katex.js
+  - _js/katex.js
 
 extra_css:
-  - css/git-commiters.css
-  - css/fonts.css
+  - _css/git-commiters.css
+  - _css/fonts.css
   - https://unpkg.com/katex@0/dist/katex.min.css # katex
 
 markdown_extensions:
