@@ -1,0 +1,7 @@
+@import './fonts/JetBrainsMonoNerdFontMono.css';
+@import './fonts/LXGWBright.css';
+
+:root {
+    --md-text-font: "LXGW Bright";
+    --md-code-font: "JetBrainsMono Nerd Font Mono";
+}

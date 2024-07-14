@@ -18,6 +18,8 @@ nav:
     - F.A.Q: intro/faq.md
   # - 知识/技能:
   #   - 概述: knowledge/index.md
+    # - Git:
+    #   - 概述: knowledge/git/index.md
   # - 课程:
   #   - 概述: course/index.md
   #   - 大一上:
@@ -28,6 +30,7 @@ theme:
   language: zh
   name: material
   custom_dir: overrides
+  font: false
   features:
     - navigation.instant  # Use XHR instead of fully reloading the page
     - navigation.instant.progress
@@ -65,6 +68,7 @@ extra_javascript:
 
 extra_css:
   - css/git-commiters.css
+  - css/fonts.css
   - https://unpkg.com/katex@0/dist/katex.min.css # katex
 
 markdown_extensions:
