@@ -6,6 +6,13 @@ repo_name: 'AzurIce/bjtuse-wiki'
 repo_url: 'https://github.com/AzurIce/bjtuse-wiki'
 edit_uri: edit/main/docs/
 
+nav:
+  - 简介: # intro
+    - 简介: index.md
+    # - 如何参与: intro/how-to-contribute.md
+    # - 贡献规范: intro/contribute-format.md
+    - F.A.Q: intro/faq.md
+
 # Theme
 theme:
   language: zh
