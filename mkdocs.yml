@@ -16,10 +16,15 @@ nav:
     # - 如何参与: intro/how-to-contribute.md
     # - 贡献规范: intro/contribute-format.md
     - F.A.Q: intro/faq.md
-  # - 知识/技能:
-  #   - 概述: knowledge/index.md
-    # - Git:
-    #   - 概述: knowledge/git/index.md
+  - 知识/技能:
+    - 概述: knowledge/_index.md
+    - 基础知识/常识:
+      - 进制转换: knowledge/basic/number-system.md
+      - 比特、字节: knowledge/basic/bit-byte.md
+      - 文件、目录、路径: knowledge/basic/files-and-path.md
+      - 命令行、终端: knowledge/basic/command-line.md
+    - Git:
+      - 概述: knowledge/git/_index.md
   # - 课程:
   #   - 概述: course/index.md
   #   - 大一上:
