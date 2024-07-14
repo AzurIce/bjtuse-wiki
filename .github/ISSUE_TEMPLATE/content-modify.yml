@@ -1,0 +1,29 @@
+name: 页面内容修改请求
+description: 请求修改页面内容
+title: 'Modify '
+labels: ["Content Modify / 内容修改", "Help Wanted / 需要援助"]
+
+body:
+- type: markdown
+  attributes:
+    value: 欢迎参与到 bjtuse-wiki 的贡献！请填写以下内容：
+- type: input
+  id: pagename
+  attributes:
+    label: 页面英文名
+    description: 添加新页面请填写
+    placeholder: page-name
+  validations:
+    required: false
+- type: textarea
+  id: page
+  attributes:
+    label: 大致修改内容
+  validations:
+    required: true
+- type: textarea
+  id: reason
+  attributes:
+    label: 请求原因
+  validations:
+    required: false
