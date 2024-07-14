@@ -99,7 +99,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tasklist: # math support
       custom_checkbox: true
 
@@ -115,3 +115,4 @@ plugins:
   - git-committers: # (mkdocs-git-committers-plugin-2)
       repository: AzurIce/bjtuse-wiki
       branch: main
+  - mermaid2
