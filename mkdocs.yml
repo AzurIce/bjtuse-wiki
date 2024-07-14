@@ -52,6 +52,7 @@ extra_javascript:
 
 extra_css:
   - css/diagram.css
+  - css/git-commiters.css
 
 markdown_extensions:
   - toc:
