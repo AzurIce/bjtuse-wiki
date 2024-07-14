@@ -6,12 +6,22 @@ repo_name: 'AzurIce/bjtuse-wiki'
 repo_url: 'https://github.com/AzurIce/bjtuse-wiki'
 edit_uri: edit/main/docs/
 
+draft_docs: |
+  drafts/
+  _*.md
+
 nav:
   - 简介: # intro
     - 简介: index.md
     # - 如何参与: intro/how-to-contribute.md
     # - 贡献规范: intro/contribute-format.md
     - F.A.Q: intro/faq.md
+  # - 知识/技能:
+  #   - 概述: knowledge/index.md
+  # - 课程:
+  #   - 概述: course/index.md
+  #   - 大一上:
+  #     - C 语言程序设计: course/grade-1-semester-1/c-programming/index.md
 
 # Theme
 theme:
@@ -19,19 +29,20 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - navigation.instant
-    - navigation.tabs
+    - navigation.instant  # Use XHR instead of fully reloading the page
+    - navigation.instant.progress
+    - navigation.tabs     # Enable navigation tabs（顶部导航栏）
     - navigation.tabs.sticky
     - navigation.path
-    - navigation.sections
-    - navigation.tracking
-    - navigation.top
-    - search.suggest
-    - search.share
+    - navigation.sections # Enable navigation sections（左侧 Section 大纲）
+    - navigation.tracking # anchor 跟随
+    - navigation.top      # Back-to-Top button（返回顶部按钮）
     - content.action.edit # 页面右上角的编辑按钮，跳转 GitHub
     - content.action.view
     - content.code.copy
-    - toc.follow
+    - toc.follow          # toc 跟随
+    - search.suggest
+    - search.share
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
