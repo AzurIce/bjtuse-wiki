@@ -21,8 +21,9 @@ nav:
     - 基础知识/常识:
       - 进制转换: knowledge/basic/base.md
       - 比特、字节: knowledge/basic/bit-byte.md
-      - 文件、目录、路径: knowledge/basic/files-and-path.md
-      - 命令行、终端: knowledge/basic/command-line.md
+      - Shell、终端、路径、脚本: knowledge/basic/shell-terminal-path-script.md
+      - 环境变量: knowledge/basic/environment-variable.md
+      - 字符编码: knowledge/basic/char-encoding.md
     - Git:
       - 概述: knowledge/git/_index.md
   # - 课程:
