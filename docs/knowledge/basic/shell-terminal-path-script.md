@@ -27,7 +27,7 @@
 
 ## Shell
 
-首先，`cmd` 和 `powershell` 是类似的存在，`cmd` 更老一些，如今已经被 `powershell` 取代（所以如果你在开始菜单找到终端直接打开，你会发现里面是 `powershell` 而不是 `cmd`）。
+首先，`cmd` 和 `powershell` 是类似的存在，`cmd` 更老一些，如今已经被 `powershell` 取代（所以如果你在开始菜单找到终端直接打开，你会发现里面是 `powershell` 而不是 `cmd`）。想要了解更多它们之间的关系，可以看一看这个视频：[windows为什么有两个命令行工具？命令提示符与PowerShell有什么区别？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Nx4y147n3)
 
 而他们，被统称为 **Shell** —— 一个接受输入的命令，执行对应操作的程序。下面就以 `powershell` 为例子来讲。
 
