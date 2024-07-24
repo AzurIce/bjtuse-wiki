@@ -16,10 +16,21 @@ nav:
     # - 如何参与: intro/how-to-contribute.md
     # - 贡献规范: intro/contribute-format.md
     - F.A.Q: intro/faq.md
-  # - 知识/技能:
-  #   - 概述: knowledge/index.md
-    # - Git:
-    #   - 概述: knowledge/git/index.md
+  - 知识/技能:
+    - 前言: knowledge/index.md
+    - 基础知识/常识:
+      - 进制转换: knowledge/basic/base.md
+      - 比特、字节: knowledge/basic/bit-byte.md
+      - Shell、终端、路径、脚本: knowledge/basic/shell-terminal-path-script.md
+      - 环境变量: knowledge/basic/environment-variable.md
+      - 字符编码: knowledge/basic/char-encoding.md
+    - Git:
+      - 概述: knowledge/git/_index.md
+  - 基础工具:
+    - 前言: tools/index.md
+    - Scoop: tools/scoop.md
+    - VSCode:
+      - 安装与基本使用: tools/vscode/index.md
   # - 课程:
   #   - 概述: course/index.md
   #   - 大一上:
@@ -64,11 +75,11 @@ extra_javascript:
   # katex
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-  - js/katex.js
+  - _js/katex.js
 
 extra_css:
-  - css/git-commiters.css
-  - css/fonts.css
+  - _css/git-commiters.css
+  - _css/fonts.css
   - https://unpkg.com/katex@0/dist/katex.min.css # katex
 
 markdown_extensions:

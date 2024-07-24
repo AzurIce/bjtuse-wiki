@@ -1,0 +1,1 @@
+可以先参考 [进位制 - OI Wiki](https://oi-wiki.org/math/base/)
